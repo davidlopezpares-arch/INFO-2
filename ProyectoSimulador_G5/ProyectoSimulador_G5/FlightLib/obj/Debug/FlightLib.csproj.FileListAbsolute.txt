@@ -1,0 +1,6 @@
+C:\Users\marca\Desktop\EETAC Ing. Sistemas Aeroespaciales\Curso 26-27\INFORMÀTICA 2\ProyectoInfo_MarcAlonso\FlightLib\bin\Debug\FlightLib.dll
+C:\Users\marca\Desktop\EETAC Ing. Sistemas Aeroespaciales\Curso 26-27\INFORMÀTICA 2\ProyectoInfo_MarcAlonso\FlightLib\bin\Debug\FlightLib.pdb
+C:\Users\marca\Desktop\EETAC Ing. Sistemas Aeroespaciales\Curso 26-27\INFORMÀTICA 2\ProyectoInfo_MarcAlonso\FlightLib\obj\Debug\FlightLib.csproj.AssemblyReference.cache
+C:\Users\marca\Desktop\EETAC Ing. Sistemas Aeroespaciales\Curso 26-27\INFORMÀTICA 2\ProyectoInfo_MarcAlonso\FlightLib\obj\Debug\FlightLib.csproj.CoreCompileInputs.cache
+C:\Users\marca\Desktop\EETAC Ing. Sistemas Aeroespaciales\Curso 26-27\INFORMÀTICA 2\ProyectoInfo_MarcAlonso\FlightLib\obj\Debug\FlightLib.dll
+C:\Users\marca\Desktop\EETAC Ing. Sistemas Aeroespaciales\Curso 26-27\INFORMÀTICA 2\ProyectoInfo_MarcAlonso\FlightLib\obj\Debug\FlightLib.pdb

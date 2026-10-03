@@ -1,0 +1,10 @@
+C:\Users\marca\Desktop\EETAC Ing. Sistemas Aeroespaciales\Curso 26-27\INFORMÀTICA 2\ProyectoInfo_MarcAlonso\SimulatorConsole\bin\Debug\SimulatorConsole.exe.config
+C:\Users\marca\Desktop\EETAC Ing. Sistemas Aeroespaciales\Curso 26-27\INFORMÀTICA 2\ProyectoInfo_MarcAlonso\SimulatorConsole\bin\Debug\SimulatorConsole.exe
+C:\Users\marca\Desktop\EETAC Ing. Sistemas Aeroespaciales\Curso 26-27\INFORMÀTICA 2\ProyectoInfo_MarcAlonso\SimulatorConsole\bin\Debug\SimulatorConsole.pdb
+C:\Users\marca\Desktop\EETAC Ing. Sistemas Aeroespaciales\Curso 26-27\INFORMÀTICA 2\ProyectoInfo_MarcAlonso\SimulatorConsole\bin\Debug\FlightLib.dll
+C:\Users\marca\Desktop\EETAC Ing. Sistemas Aeroespaciales\Curso 26-27\INFORMÀTICA 2\ProyectoInfo_MarcAlonso\SimulatorConsole\bin\Debug\FlightLib.pdb
+C:\Users\marca\Desktop\EETAC Ing. Sistemas Aeroespaciales\Curso 26-27\INFORMÀTICA 2\ProyectoInfo_MarcAlonso\SimulatorConsole\obj\Debug\SimulatorConsole.csproj.AssemblyReference.cache
+C:\Users\marca\Desktop\EETAC Ing. Sistemas Aeroespaciales\Curso 26-27\INFORMÀTICA 2\ProyectoInfo_MarcAlonso\SimulatorConsole\obj\Debug\SimulatorConsole.csproj.CoreCompileInputs.cache
+C:\Users\marca\Desktop\EETAC Ing. Sistemas Aeroespaciales\Curso 26-27\INFORMÀTICA 2\ProyectoInfo_MarcAlonso\SimulatorConsole\obj\Debug\Simulato.840E03AB.Up2Date
+C:\Users\marca\Desktop\EETAC Ing. Sistemas Aeroespaciales\Curso 26-27\INFORMÀTICA 2\ProyectoInfo_MarcAlonso\SimulatorConsole\obj\Debug\SimulatorConsole.exe
+C:\Users\marca\Desktop\EETAC Ing. Sistemas Aeroespaciales\Curso 26-27\INFORMÀTICA 2\ProyectoInfo_MarcAlonso\SimulatorConsole\obj\Debug\SimulatorConsole.pdb

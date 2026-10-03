@@ -1,11 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.3.32819.101
+# Visual Studio Version 18
+VisualStudioVersion = 18.10.12210.168 stable
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimulatorConsole", "SimulatorConsole\SimulatorConsole.csproj", "{CE7E8A4A-F1F7-4EAF-8088-7450A2A8B5A0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightLib", "FlightLib\FlightLib.csproj", "{44556C78-FA9F-4CFE-8BBB-87D2116977B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsSimulator", "FormsSimulator\FormsSimulator.csproj", "{BE7FBBEB-F644-43DE-8DF2-2FA1D9A1116D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuevoFormulario", "NuevoFormulario\NuevoFormulario.csproj", "{FDF8DF65-9110-4937-BA08-501508CD6D02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dist_Seguridad_Formulario", "Dist_Seguridad_Formulario\Dist_Seguridad_Formulario.csproj", "{4A8E7857-D1B1-4575-AFF7-60793C05C69C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{44556C78-FA9F-4CFE-8BBB-87D2116977B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44556C78-FA9F-4CFE-8BBB-87D2116977B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44556C78-FA9F-4CFE-8BBB-87D2116977B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE7FBBEB-F644-43DE-8DF2-2FA1D9A1116D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE7FBBEB-F644-43DE-8DF2-2FA1D9A1116D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE7FBBEB-F644-43DE-8DF2-2FA1D9A1116D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE7FBBEB-F644-43DE-8DF2-2FA1D9A1116D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDF8DF65-9110-4937-BA08-501508CD6D02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDF8DF65-9110-4937-BA08-501508CD6D02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDF8DF65-9110-4937-BA08-501508CD6D02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDF8DF65-9110-4937-BA08-501508CD6D02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A8E7857-D1B1-4575-AFF7-60793C05C69C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A8E7857-D1B1-4575-AFF7-60793C05C69C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A8E7857-D1B1-4575-AFF7-60793C05C69C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A8E7857-D1B1-4575-AFF7-60793C05C69C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

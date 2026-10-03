@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +11,6 @@ namespace SimulatorConsole
     {
         static void Main(string[] args)
         {
-            FlightPlanList lista = new FlightPlanList();
             // Tratar excepcion de formato incorrecto
             try
             {
@@ -64,9 +62,6 @@ namespace SimulatorConsole
                 // Instancia un objeto del tipo FlightPlan
                 FlightPlan plan_b = new FlightPlan(identificador, ix, iy, fx, fy, velocidad);
 
-                lista.AddFlightPlan(plan_a);
-                lista.AddFlightPlan(plan_b);
-
                 // Simulación
                 // Bucle de simulación (ciclos + tiempo de ciclos)
 
@@ -77,8 +72,8 @@ namespace SimulatorConsole
                 int i = 0;
                 while (i < ciclos)
                 {
-                    lista.GetFlightPlan(0).Mover(tiempoCiclo);
-                    lista.GetFlightPlan(1).Mover(tiempoCiclo);
+                    plan_a.Mover(tiempoCiclo);
+                    plan_b.Mover(tiempoCiclo);
                     plan_a.EscribeConsola();
                     plan_b.EscribeConsola();
                     if (plan_a.Conflicto(plan_b, distanciaSeguridad))
