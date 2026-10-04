@@ -29,7 +29,9 @@ namespace FormsSimulator
         private void espacioAéreoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             EspacioAéreo Form = new EspacioAéreo(milista);
+            Form.SetSimulator(this);
             Form.ShowDialog();
+            
         }
         public double GetDistancia()
         {
@@ -37,7 +39,7 @@ namespace FormsSimulator
         }
         public int GetTiempo()
         {
-            return tiempo;
+            return tiempo;  
         }
     }
 }
