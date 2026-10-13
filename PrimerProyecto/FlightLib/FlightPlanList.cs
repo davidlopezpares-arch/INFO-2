@@ -57,5 +57,9 @@ namespace FlightLib
                 i++;
             }
         }
+        public int GetNumber()
+        {
+            return this.number;
+        }
     }
 }
