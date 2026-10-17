@@ -39,6 +39,10 @@ namespace FlightLib
                 return vector[i]; 
             }
         }
+        public int GetNumFlightPlans()
+        {
+            return number;
+        }
         public void Mover(double tiempo)
         {
             int i = 0;
@@ -56,10 +60,6 @@ namespace FlightLib
                 vector[i].EscribeConsola();
                 i++;
             }
-        }
-        public int GetNumber()
-        {
-            return this.number;
         }
     }
 }

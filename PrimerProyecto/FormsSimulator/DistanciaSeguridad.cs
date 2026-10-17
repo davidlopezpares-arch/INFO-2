@@ -17,12 +17,12 @@ namespace FormsSimulator
         double distancia;
         int tiempo;
 
-        private void button1_Click(object sender, EventArgs e)
+        private void AceptarButton_Click(object sender, EventArgs e)
         {
             try
             {
-                distancia = Convert.ToDouble(textBox1.Text);
-                tiempo = Convert.ToInt32(textBox2.Text);
+                distancia = Convert.ToDouble(DistanciaS.Text);
+                tiempo = Convert.ToInt32(TiempoC.Text);
                 Close();
             }
             catch (FormatException)

@@ -21,32 +21,32 @@ namespace FormsSimulator
 
         private void InfoVuelo_Load(object sender, EventArgs e)
         {
-            dataGridView1.RowCount = 8;
-            dataGridView1.ColumnCount = 2;
-            dataGridView1.Rows[0].Cells[0] = new DataGridViewTextBoxCell();
-            dataGridView1.Rows[0].Cells[0].Value = "Identificador";
-            dataGridView1.Rows[1].Cells[0] = new DataGridViewTextBoxCell();
-            dataGridView1.Rows[1].Cells[0].Value = "X inicial";
-            dataGridView1.Rows[2].Cells[0] = new DataGridViewTextBoxCell();
-            dataGridView1.Rows[2].Cells[0].Value = "Y inicial";
-            dataGridView1.Rows[3].Cells[0] = new DataGridViewTextBoxCell();
-            dataGridView1.Rows[3].Cells[0].Value = "X actual";
-            dataGridView1.Rows[4].Cells[0] = new DataGridViewTextBoxCell();
-            dataGridView1.Rows[4].Cells[0].Value = "Y actual";
-            dataGridView1.Rows[5].Cells[0] = new DataGridViewTextBoxCell();
-            dataGridView1.Rows[5].Cells[0].Value = "X final";
-            dataGridView1.Rows[6].Cells[0] = new DataGridViewTextBoxCell();
-            dataGridView1.Rows[6].Cells[0].Value = "Y final";
-            dataGridView1.Rows[7].Cells[0] = new DataGridViewTextBoxCell();
-            dataGridView1.Rows[7].Cells[0].Value = "Velocidad";
-            dataGridView1.Rows[0].Cells[1].Value = plan.GetId();
-            dataGridView1.Rows[1].Cells[1].Value = plan.GetInitialPosition().GetX();
-            dataGridView1.Rows[2].Cells[1].Value = plan.GetInitialPosition().GetY();
-            dataGridView1.Rows[3].Cells[1].Value = plan.GetCurrentPosition().GetX();
-            dataGridView1.Rows[4].Cells[1].Value = plan.GetCurrentPosition().GetY();
-            dataGridView1.Rows[5].Cells[1].Value = plan.GetFinalPosition().GetX();
-            dataGridView1.Rows[6].Cells[1].Value = plan.GetFinalPosition().GetY();
-            dataGridView1.Rows[7].Cells[1].Value = plan.GetVelocidad();
+            Matriz.RowCount = 8;
+            Matriz.ColumnCount = 2;
+            Matriz.Rows[0].Cells[0] = new DataGridViewTextBoxCell();
+            Matriz.Rows[0].Cells[0].Value = "Identificador";
+            Matriz.Rows[1].Cells[0] = new DataGridViewTextBoxCell();
+            Matriz.Rows[1].Cells[0].Value = "X inicial";
+            Matriz.Rows[2].Cells[0] = new DataGridViewTextBoxCell();
+            Matriz.Rows[2].Cells[0].Value = "Y inicial";
+            Matriz.Rows[3].Cells[0] = new DataGridViewTextBoxCell();
+            Matriz.Rows[3].Cells[0].Value = "X actual";
+            Matriz.Rows[4].Cells[0] = new DataGridViewTextBoxCell();
+            Matriz.Rows[4].Cells[0].Value = "Y actual";
+            Matriz.Rows[5].Cells[0] = new DataGridViewTextBoxCell();
+            Matriz.Rows[5].Cells[0].Value = "X final";
+            Matriz.Rows[6].Cells[0] = new DataGridViewTextBoxCell();
+            Matriz.Rows[6].Cells[0].Value = "Y final";
+            Matriz.Rows[7].Cells[0] = new DataGridViewTextBoxCell();
+            Matriz.Rows[7].Cells[0].Value = "Velocidad";
+            Matriz.Rows[0].Cells[1].Value = plan.GetId();
+            Matriz.Rows[1].Cells[1].Value = plan.GetInitialPosition().GetX();
+            Matriz.Rows[2].Cells[1].Value = plan.GetInitialPosition().GetY();
+            Matriz.Rows[3].Cells[1].Value = plan.GetCurrentPosition().GetX();
+            Matriz.Rows[4].Cells[1].Value = plan.GetCurrentPosition().GetY();
+            Matriz.Rows[5].Cells[1].Value = plan.GetFinalPosition().GetX();
+            Matriz.Rows[6].Cells[1].Value = plan.GetFinalPosition().GetY();
+            Matriz.Rows[7].Cells[1].Value = plan.GetVelocidad();
         }
     }
 }

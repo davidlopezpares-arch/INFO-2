@@ -28,34 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            Matriz = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)Matriz).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // Matriz
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(25, 12);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(763, 426);
-            dataGridView1.TabIndex = 0;
+            Matriz.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            Matriz.Location = new Point(25, 12);
+            Matriz.Name = "Matriz";
+            Matriz.RowHeadersWidth = 62;
+            Matriz.Size = new Size(763, 426);
+            Matriz.TabIndex = 0;
             // 
             // InfoVuelo
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(dataGridView1);
+            Controls.Add(Matriz);
             Name = "InfoVuelo";
             Text = "InfoVuelo";
             Load += InfoVuelo_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Matriz).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private DataGridView dataGridView1;
+        private DataGridView Matriz;
     }
 }

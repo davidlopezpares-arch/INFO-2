@@ -30,9 +30,9 @@
         {
             label1 = new Label();
             label2 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            button1 = new Button();
+            DistanciaS = new TextBox();
+            TiempoC = new TextBox();
+            AceptarButton = new Button();
             SuspendLayout();
             // 
             // label1
@@ -53,38 +53,38 @@
             label2.TabIndex = 1;
             label2.Text = "Tiempo de ciclo";
             // 
-            // textBox1
+            // DistanciaS
             // 
-            textBox1.Location = new Point(154, 172);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(150, 31);
-            textBox1.TabIndex = 2;
+            DistanciaS.Location = new Point(154, 172);
+            DistanciaS.Name = "DistanciaS";
+            DistanciaS.Size = new Size(150, 31);
+            DistanciaS.TabIndex = 2;
             // 
-            // textBox2
+            // TiempoC
             // 
-            textBox2.Location = new Point(512, 172);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(150, 31);
-            textBox2.TabIndex = 3;
+            TiempoC.Location = new Point(512, 172);
+            TiempoC.Name = "TiempoC";
+            TiempoC.Size = new Size(150, 31);
+            TiempoC.TabIndex = 3;
             // 
-            // button1
+            // AceptarButton
             // 
-            button1.Location = new Point(320, 304);
-            button1.Name = "button1";
-            button1.Size = new Size(158, 72);
-            button1.TabIndex = 4;
-            button1.Text = "Aceptar";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            AceptarButton.Location = new Point(320, 304);
+            AceptarButton.Name = "AceptarButton";
+            AceptarButton.Size = new Size(158, 72);
+            AceptarButton.TabIndex = 4;
+            AceptarButton.Text = "Aceptar";
+            AceptarButton.UseVisualStyleBackColor = true;
+            AceptarButton.Click += AceptarButton_Click;
             // 
             // DistanciaSeguridad
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(AceptarButton);
+            Controls.Add(TiempoC);
+            Controls.Add(DistanciaS);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "DistanciaSeguridad";
@@ -97,8 +97,8 @@
 
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private Button button1;
+        private TextBox DistanciaS;
+        private TextBox TiempoC;
+        private Button AceptarButton;
     }
 }

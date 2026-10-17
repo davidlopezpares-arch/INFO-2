@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
+            Id1 = new TextBox();
+            PosicionInicial1 = new TextBox();
+            PosicionFinal1 = new TextBox();
+            Velocidad1 = new TextBox();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
@@ -42,40 +42,40 @@
             label8 = new Label();
             label9 = new Label();
             label10 = new Label();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            textBox7 = new TextBox();
-            textBox8 = new TextBox();
-            button1 = new Button();
+            Velocidad2 = new TextBox();
+            PosicionFinal2 = new TextBox();
+            PosicionInicial2 = new TextBox();
+            Id2 = new TextBox();
+            Aceptarbutton = new Button();
             SuspendLayout();
             // 
-            // textBox1
+            // Id1
             // 
-            textBox1.Location = new Point(179, 93);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(150, 31);
-            textBox1.TabIndex = 0;
+            Id1.Location = new Point(179, 93);
+            Id1.Name = "Id1";
+            Id1.Size = new Size(150, 31);
+            Id1.TabIndex = 0;
             // 
-            // textBox2
+            // PosicionInicial1
             // 
-            textBox2.Location = new Point(179, 167);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(150, 31);
-            textBox2.TabIndex = 1;
+            PosicionInicial1.Location = new Point(179, 167);
+            PosicionInicial1.Name = "PosicionInicial1";
+            PosicionInicial1.Size = new Size(150, 31);
+            PosicionInicial1.TabIndex = 1;
             // 
-            // textBox3
+            // PosicionFinal1
             // 
-            textBox3.Location = new Point(179, 246);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(150, 31);
-            textBox3.TabIndex = 2;
+            PosicionFinal1.Location = new Point(179, 246);
+            PosicionFinal1.Name = "PosicionFinal1";
+            PosicionFinal1.Size = new Size(150, 31);
+            PosicionFinal1.TabIndex = 2;
             // 
-            // textBox4
+            // Velocidad1
             // 
-            textBox4.Location = new Point(179, 324);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(150, 31);
-            textBox4.TabIndex = 3;
+            Velocidad1.Location = new Point(179, 324);
+            Velocidad1.Name = "Velocidad1";
+            Velocidad1.Size = new Size(150, 31);
+            Velocidad1.TabIndex = 3;
             // 
             // label1
             // 
@@ -167,68 +167,68 @@
             label10.TabIndex = 13;
             label10.Text = "Vuelo 2";
             // 
-            // textBox5
+            // Velocidad2
             // 
-            textBox5.Location = new Point(523, 321);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(150, 31);
-            textBox5.TabIndex = 12;
+            Velocidad2.Location = new Point(523, 321);
+            Velocidad2.Name = "Velocidad2";
+            Velocidad2.Size = new Size(150, 31);
+            Velocidad2.TabIndex = 12;
             // 
-            // textBox6
+            // PosicionFinal2
             // 
-            textBox6.Location = new Point(523, 243);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(150, 31);
-            textBox6.TabIndex = 11;
+            PosicionFinal2.Location = new Point(523, 243);
+            PosicionFinal2.Name = "PosicionFinal2";
+            PosicionFinal2.Size = new Size(150, 31);
+            PosicionFinal2.TabIndex = 11;
             // 
-            // textBox7
+            // PosicionInicial2
             // 
-            textBox7.Location = new Point(523, 164);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(150, 31);
-            textBox7.TabIndex = 10;
+            PosicionInicial2.Location = new Point(523, 164);
+            PosicionInicial2.Name = "PosicionInicial2";
+            PosicionInicial2.Size = new Size(150, 31);
+            PosicionInicial2.TabIndex = 10;
             // 
-            // textBox8
+            // Id2
             // 
-            textBox8.Location = new Point(523, 90);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(150, 31);
-            textBox8.TabIndex = 9;
+            Id2.Location = new Point(523, 90);
+            Id2.Name = "Id2";
+            Id2.Size = new Size(150, 31);
+            Id2.TabIndex = 9;
             // 
-            // button1
+            // Aceptarbutton
             // 
-            button1.Location = new Point(323, 380);
-            button1.Name = "button1";
-            button1.Size = new Size(112, 34);
-            button1.TabIndex = 18;
-            button1.Text = "Aceptar";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            Aceptarbutton.Location = new Point(323, 380);
+            Aceptarbutton.Name = "Aceptarbutton";
+            Aceptarbutton.Size = new Size(112, 34);
+            Aceptarbutton.TabIndex = 18;
+            Aceptarbutton.Text = "Aceptar";
+            Aceptarbutton.UseVisualStyleBackColor = true;
+            Aceptarbutton.Click += Aceptarbutton_Click;
             // 
             // NuevoForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button1);
+            Controls.Add(Aceptarbutton);
             Controls.Add(label6);
             Controls.Add(label7);
             Controls.Add(label8);
             Controls.Add(label9);
             Controls.Add(label10);
-            Controls.Add(textBox5);
-            Controls.Add(textBox6);
-            Controls.Add(textBox7);
-            Controls.Add(textBox8);
+            Controls.Add(Velocidad2);
+            Controls.Add(PosicionFinal2);
+            Controls.Add(PosicionInicial2);
+            Controls.Add(Id2);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(Velocidad1);
+            Controls.Add(PosicionFinal1);
+            Controls.Add(PosicionInicial1);
+            Controls.Add(Id1);
             Name = "NuevoForm";
             Text = "NuevoForm";
             ResumeLayout(false);
@@ -237,10 +237,10 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
+        private TextBox Id1;
+        private TextBox PosicionInicial1;
+        private TextBox PosicionFinal1;
+        private TextBox Velocidad1;
         private Label label1;
         private Label label2;
         private Label label3;
@@ -251,10 +251,10 @@
         private Label label8;
         private Label label9;
         private Label label10;
-        private TextBox textBox5;
-        private TextBox textBox6;
-        private TextBox textBox7;
-        private TextBox textBox8;
-        private Button button1;
+        private TextBox Velocidad2;
+        private TextBox PosicionFinal2;
+        private TextBox PosicionInicial2;
+        private TextBox Id2;
+        private Button Aceptarbutton;
     }
 }
