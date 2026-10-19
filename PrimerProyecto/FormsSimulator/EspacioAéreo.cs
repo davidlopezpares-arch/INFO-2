@@ -69,8 +69,7 @@ namespace FormsSimulator
                 int Y = Convert.ToInt32(plan.GetCurrentPosition().GetY());
                 mispics[i].Location = new Point(X - 5, Y - 5);
             }
-            panel1.Invalidate();
-            VerificarConflicto();
+            panel1.Invalidate();   
             MostrarMensajeConflicto();
 
         }
@@ -126,8 +125,7 @@ namespace FormsSimulator
                 mispics[i].Location = new Point(X - 5, Y - 5);
             }
             panel1.Invalidate();
-            VerificarConflicto();
-            if (VerificarConflicto() == true)
+            if (milista.GetFlightPlan(0).Conflicto(milista.GetFlightPlan(1), 2 * (simulator.GetDistancia())) == true)
             {
                 timer1.Stop();
                 Automáticobutton.Text = "Automático";
@@ -155,23 +153,9 @@ namespace FormsSimulator
             MostrarDatos Form = new MostrarDatos(milista);
             Form.ShowDialog();
         }
-        public bool VerificarConflicto()
-        {
-            if (milista.GetNumFlightPlans() >= 2)
-            {
-                FlightPlan A = milista.GetFlightPlan(0);
-                FlightPlan B = milista.GetFlightPlan(1);
-
-                if (A != null && B != null && A.Conflicto(B, 2 * (simulator.GetDistancia())))
-                {
-                    return true;
-                }
-            }
-            return false;
-        }
         public void MostrarMensajeConflicto()
         {
-            if (VerificarConflicto())
+            if (milista.GetFlightPlan(0).Conflicto(milista.GetFlightPlan(1), 2 * (simulator.GetDistancia())))
             {
                 MessageBox.Show("Traffic, Traffic, TCAS on");
             }
@@ -179,18 +163,13 @@ namespace FormsSimulator
 
         private void Conflicto_Click(object sender, EventArgs e)
         {
-            while(milista.GetFlightPlan(0).Conflicto(milista.GetFlightPlan(1), 2 * (simulator.GetDistancia())) == false)
+            bool conflicto = milista.GetFlightPlan(0).Conflicto(milista.GetFlightPlan(1), 2 * (simulator.GetDistancia()));
+            while (conflicto == false && !milista.GetFlightPlan(0).EstaDestino())
             {
                 milista.Mover(simulator.GetTiempo());
-                for (int i = 0; i < milista.GetNumFlightPlans(); i++)
-                {
-                    FlightPlan plan = milista.GetFlightPlan(i);
-                    int X = Convert.ToInt32(plan.GetCurrentPosition().GetX());
-                    int Y = Convert.ToInt32(plan.GetCurrentPosition().GetY());
-                }
-                VerificarConflicto();
+                conflicto = milista.GetFlightPlan(0).Conflicto(milista.GetFlightPlan(1), 2 * (simulator.GetDistancia()));
             }
-            if (VerificarConflicto() == true)
+            if (conflicto == true)
             {
                 MessageBox.Show("Van a Chocar!!!!!!!!!!!");
             }
@@ -198,6 +177,8 @@ namespace FormsSimulator
             {
                 MessageBox.Show("No habrá Conflicto");
             }
+            milista.GetFlightPlan(0).Restart();
+            milista.GetFlightPlan(1).Restart();
         }
     }
 }

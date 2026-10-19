@@ -34,6 +34,8 @@ namespace FormsSimulator
             }
             if (milista.GetFlightPlan(0).Conflicto(milista.GetFlightPlan(1), 2 * (GetDistancia())) == true)
             {
+                milista.GetFlightPlan(0).Restart();
+                milista.GetFlightPlan(1).Restart();
                 ArreglarConflicto form = new ArreglarConflicto();
                 form.SetFlightPlanList(milista);
                 form.SetSimulator(this);
@@ -41,6 +43,8 @@ namespace FormsSimulator
             }
             else
             {
+                milista.GetFlightPlan(0).Restart();
+                milista.GetFlightPlan(1).Restart();
                 EspacioAéreo Form = new EspacioAéreo(milista);
                 Form.SetSimulator(this);
                 Form.ShowDialog();
