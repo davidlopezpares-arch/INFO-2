@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="ArreglarConflicto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CambiarVel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DistanciaSeguridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DistanciaVuelos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="EspacioAéreo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InfoVuelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MostrarDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="NuevoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Simulator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="ArreglarConflicto.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DistanciaSeguridad.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DistanciaVuelos.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="EspacioAéreo.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="InfoVuelo.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MostrarDatos.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="NuevoForm.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Simulator.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
