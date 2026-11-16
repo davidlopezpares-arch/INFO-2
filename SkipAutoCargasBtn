@@ -1,0 +1,99 @@
+private void SkipAutoCargasBtn_Click(object sender, EventArgs e)
+{
+    bool conflicto = false;
+    int i = 0;
+
+    distancia = 10;
+    tiempo = 10;
+    try
+    {
+        StreamReader r = new StreamReader("FlightPlans.txt");
+        string linea = r.ReadLine();
+
+        while (linea != null)
+        {
+            string[] datos = linea.Split(' ');
+
+            if (datos.Length != 7)
+            {
+                MessageBox.Show("Error en el formato del archivo");
+                r.Close();
+                return;
+            }
+
+            string id = datos[0];
+            string compañia = datos[1];
+
+            double cpx = Convert.ToDouble(datos[2]);
+            double cpy = Convert.ToDouble(datos[3]);
+            double fpx = Convert.ToDouble(datos[4]);
+            double fpy = Convert.ToDouble(datos[5]);
+            double velocidad = Convert.ToDouble(datos[6]);
+
+            if (velocidad <= 0)
+            {
+                MessageBox.Show("La velocidad debe ser positiva");
+                r.Close();
+                return;
+            }
+
+            FlightPlan plan = new FlightPlan(id, compañia, cpx, cpy, fpx, fpy, velocidad);
+
+            milista.AddFlightPlan(plan);
+
+
+            linea = r.ReadLine();
+        }
+
+        r.Close();
+    }
+    catch (FileNotFoundException)
+    {
+        MessageBox.Show("Archivo no encontrado");
+        return;
+    }
+    catch (FormatException)
+    {
+        MessageBox.Show("Error en el formato de los datos del archivo");
+        return;
+    }
+    catch (ArgumentException)
+    {
+        MessageBox.Show("Error en los datos del archivo");
+        return;
+    }
+
+    while (i < milista.GetNumFlightPlans())
+    {
+        int j = i + 1;
+        while (j < milista.GetNumFlightPlans())
+        {
+            if (milista.GetFlightPlan(i).Conflicto(milista.GetFlightPlan(j), 2 * distancia))
+            {
+                conflicto = true;
+            }
+            j = j + 1;
+        }
+        i = i + 1;
+    }
+    
+
+    if (conflicto)
+    {
+        ArreglarConflicto form = new ArreglarConflicto();
+        form.SetFlightPlanList(milista);
+        form.SetDistancia(distancia);
+        form.SetTiempo(tiempo);
+        form.ShowDialog();
+        milista = form.GetLista();
+    }
+    else
+    {
+        EspacioAéreo Form = new EspacioAéreo();
+        Form.SetLista(milista);
+        Form.SetDistancia(distancia);
+        Form.SetTiempo(tiempo);
+        Form.ShowDialog();
+        milista = Form.GetLista();
+    }
+}
